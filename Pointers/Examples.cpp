@@ -76,3 +76,18 @@ int *ptr1;
 
 
 // Chapter 6: Linkages Between Arrays and Pointer Syntax in C++
+	int arr[3] = {10,15,20};
+	
+	int *ptr = new int[3];
+	
+	*(ptr + 0) = 2;
+	*(ptr + 1) = 4;
+	*(ptr + 2) = 6;
+	
+	cout << "arr[0] using array notation = " << arr[0] << endl;
+	cout << "arr[0] using pointer notation = " << *(arr + 0) << endl;
+	
+	// Access the base address of the array that the pointer points to
+	cout << ptr << endl;
+	// Access the address of the array arr;
+	cout << arr << endl;
