@@ -91,3 +91,17 @@ int *ptr1;
 	cout << ptr << endl;
 	// Access the address of the array arr;
 	cout << arr << endl;
+
+
+// Chapter 7: Multi-Dimensional Pointers
+int **ptr2;
+	int *ptr;
+	int i = 10;
+	
+	ptr = &i;
+	ptr2 = &ptr;
+	
+	cout << " ptr = " << ptr << endl;
+	cout << "*ptr = " << *ptr << endl;
+	cout << "*ptr2 = " << *ptr2 << endl;
+	cout << "**ptr2 = " << **ptr2 << endl;
